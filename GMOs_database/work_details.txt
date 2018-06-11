@@ -1,0 +1,37 @@
+Master in Bioinformatics
+
+Databases for Bioinformatics
+"Genetic Representations in GMO's"
+
+Alterations to the original model
+
+The physical model originally presented required some alterations to promote functionality and to
+avoid erros. Therefore, the next alterations were applied:
+
+* The table "artigos", related with the table "espécie modificada" in a ralation of 1:N 
+(each specie can have several published papers) was created to allow several bibliographic references
+to be added for each specie.
+
+* The ('000') ID was introduced as an atribute for sequences of trangenes not published.
+
+* The relation of the table "sequência" with the table "transgene" was altered to 1:1 to express
+that each sequence is unique to each transgene.
+
+* To "ID of transgene" it was added the character 'O' as a suffix in available sequences to maintain
+all the IDs uniform, eliminating the variance of "varchars" and "integers".
+
+Functionality Test
+
+In the file 'Test_commands.sql' some commands were executed to test the functionality of the database.
+All results were consistent with the objectives, so the database is considered functional.
+
+Challenges in the creation of the Database
+
+The theme of the database is relatively complex with information being limited, so finding examples
+to test the database. Therefore, we tried to build the database taking into consideration the possibility
+of a lack of information.
+
+The normalization of the database brought some problems in the adaptation of the concept.
+The software MySQL Workbench is intuitive, relatively 'user friendly' with several interesting
+functionalities for the creation and normalization of the database, as well as in the cleaning of 
+all the bugs. 
